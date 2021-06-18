@@ -11,6 +11,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ExternallyComponent } from './externally/externally.component';
 import { EternallyComponent } from './eternally/eternally.component';
 import { InternallyComponent } from './internally/internally.component';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/recipes', pathMatch: 'full' },
@@ -37,7 +38,7 @@ const appRoutes: Routes = [
   { path: 'externally', component: ExternallyComponent },
   { path: 'eternally', component: EternallyComponent },
   { path: 'internally', component: InternallyComponent },
-
+  { path: 'home', component: HomeComponent },
   { path: 'auth', component: AuthComponent },
 ];
 

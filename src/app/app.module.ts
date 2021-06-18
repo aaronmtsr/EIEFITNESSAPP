@@ -23,6 +23,7 @@ import { AuthInterceptorService } from './auth/auth-interceptor.service';
 import { EternallyComponent } from './eternally/eternally.component';
 import { ExternallyComponent } from './externally/externally.component';
 import { InternallyComponent } from './internally/internally.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { InternallyComponent } from './internally/internally.component';
     LoadingSpinnerComponent,
     EternallyComponent,
     ExternallyComponent,
-    InternallyComponent
+    InternallyComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
