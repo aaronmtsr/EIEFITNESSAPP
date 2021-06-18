@@ -10,7 +10,7 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ExternallyComponent } from './externally/externally.component';
 import { EternallyComponent } from './eternally/eternally.component';
-import { InternallyComponent } from './Internally/Internally.component';
+import { InternallyComponent } from './internally/internally.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/recipes', pathMatch: 'full' },

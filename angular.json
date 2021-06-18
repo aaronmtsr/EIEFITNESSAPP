@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-course-project": {
+    "eiefitnessapp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -16,7 +16,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-course-project",
+            "outputPath": "dist/eiefitnessapp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-course-project:build"
+            "browserTarget": "eiefitnessapp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-course-project:build:production"
+              "browserTarget": "eiefitnessapp:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-course-project:build"
+            "browserTarget": "eiefitnessapp:build"
           }
         },
         "test": {
@@ -113,16 +113,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-course-project:serve"
+            "devServerTarget": "eiefitnessapp:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-course-project:serve:production"
+              "devServerTarget": "eiefitnessapp:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "angular-course-project"
+  "defaultProject": "eiefitnessapp"
 }
