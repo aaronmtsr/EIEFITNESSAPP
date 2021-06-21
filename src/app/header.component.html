@@ -4,21 +4,21 @@
       <a style="cursor: pointer" class="navbar-brand" routerLink="/home">Home</a>
     </div>
     <div class="navbar-header">
-      <a style="cursor: pointer" class="navbar-brand" routerLink="/eternally">Eternally</a>
+      <a style="cursor: pointer" class="navbar-brand" routerLink="/externally">Externally</a>
     </div>
     <div class="navbar-header">
       <a style="cursor: pointer" class="navbar-brand" routerLink="/internally">Internally</a>
     </div>
     <div class="navbar-header">
-      <a style="cursor: pointer" class="navbar-brand" routerLink="/externally">Externally</a>
+      <a style="cursor: pointer" class="navbar-brand" routerLink="/eternally">Eternally</a>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li routerLinkActive="active">
+        <!-- <li routerLinkActive="active">
           <a routerLink="/recipes" *ngIf="isAuthenticated">Recipes</a>
-        </li>
+        </li> -->
         <li routerLinkActive="active">
-          <a routerLink="/auth" *ngIf="!isAuthenticated">Authenticate</a>
+          <a routerLink="/auth" *ngIf="!isAuthenticated">Login</a>
         </li>
         <li routerLinkActive="active">
           <a routerLink="/shopping-list">Personal List</a>
