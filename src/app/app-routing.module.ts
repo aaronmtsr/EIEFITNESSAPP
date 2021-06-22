@@ -12,9 +12,10 @@ import { ExternallyComponent } from './externally/externally.component';
 import { EternallyComponent } from './eternally/eternally.component';
 import { InternallyComponent } from './internally/internally.component';
 import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component'
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/recipes', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   {
     path: 'recipes',
     component: RecipesComponent,
@@ -38,8 +39,10 @@ const appRoutes: Routes = [
   { path: 'externally', component: ExternallyComponent },
   { path: 'eternally', component: EternallyComponent },
   { path: 'internally', component: InternallyComponent },
+  { path: 'contact', component: ContactComponent },
   { path: 'home', component: HomeComponent },
   { path: 'auth', component: AuthComponent },
+
 ];
 
 @NgModule({
