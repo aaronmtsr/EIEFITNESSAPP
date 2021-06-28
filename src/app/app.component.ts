@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
+import { defaultData } from './schedule/datasource.js';
 import { AuthService } from './auth/auth.service';
+import { ConnectionService } from './connection.service';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,13 +10,23 @@ import { AuthService } from './auth/auth.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  constructor(private authService: AuthService) {}
+  contactForm: any;
+  disabledSubmitButton: boolean;
+  @HostListener('input') oninput() {
+    if (this.contactForm.valid) {
+      this.disabledSubmitButton = false;
+      }
+  }
+  constructor(private authService: AuthService)
+
+  {}
 
   ngOnInit() {
     this.authService.autoLogin();
   }
 
-  title = 'angular-course-project';
+
+  title = 'eiefitnessapp';
 
   // loadedFeature = 'recipe';
   // onNavigate(feature: string) {

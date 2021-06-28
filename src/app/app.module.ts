@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
 import { RecipesComponent } from './recipes/recipes.component';
@@ -25,7 +25,10 @@ import { ExternallyComponent } from './externally/externally.component';
 import { InternallyComponent } from './internally/internally.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { ScheduleComponent } from './schedule/schedule.component';
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule';
+import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService, TimelineViewsService, TimelineMonthService } from '@syncfusion/ej2-angular-schedule';
+import { ConnectionService } from './connection.service';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,9 @@ import { ContactComponent } from './contact/contact.component';
     ExternallyComponent,
     InternallyComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    ScheduleComponent
+
   ],
   imports: [
     BrowserModule,
@@ -54,8 +59,11 @@ import { ContactComponent } from './contact/contact.component';
     ReactiveFormsModule,
     HttpClientModule,
     AppRoutingModule,
+    CalendarModule,
+    ScheduleModule,
+
   ],
-  providers: [ShoppingListService, RecipeService, {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true}],
+  providers: [ShoppingListService, ConnectionService, DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService, TimelineViewsService, TimelineMonthService, RecipeService, {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true}],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
