@@ -12,9 +12,9 @@ import { ExternallyComponent } from './externally/externally.component';
 import { EternallyComponent } from './eternally/eternally.component';
 import { InternallyComponent } from './internally/internally.component';
 import { HomeComponent } from './home/home.component';
-import { ContactComponent } from './contact/contact.component'
-import { ScheduleComponent} from './schedule/schedule.component'
-
+import { ContactComponent } from './contact/contact.component';
+import { ScheduleComponent} from './schedule/schedule.component';
+import { PhotoComponent } from './photo/photo.component';
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   {
@@ -43,6 +43,7 @@ const appRoutes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'home', component: HomeComponent },
   { path: 'auth', component: AuthComponent },
+  { path: 'photo', component: PhotoComponent },
   { path: 'schedule', component: ScheduleComponent },
 
 ];

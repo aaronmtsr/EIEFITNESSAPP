@@ -29,6 +29,9 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { ScheduleModule } from '@syncfusion/ej2-angular-schedule';
 import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService, TimelineViewsService, TimelineMonthService } from '@syncfusion/ej2-angular-schedule';
 import { ConnectionService } from './connection.service';
+import { AnimateComponent } from './animate/animate.component';
+import { PhotoComponent } from './photo/photo.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [
@@ -50,7 +53,9 @@ import { ConnectionService } from './connection.service';
     InternallyComponent,
     HomeComponent,
     ContactComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    AnimateComponent,
+    PhotoComponent
 
   ],
   imports: [
